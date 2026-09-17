@@ -26,7 +26,7 @@ export default function Home() {
     // Check if we are bypassing the intro via a navigation click or if it was already seen in this JS context
     // We use a custom window property to catch navigation clicks from other pages
     const hasBypass = typeof window !== 'undefined' && (window as any).run2_intro_bypass === true;
-    if (globalIntroSeen || hasBypass || window.location.hash === '#hero') {
+    if (globalIntroSeen || hasBypass || window.location.hash === '#hero' || window.location.hash === '#work' || window.location.hash === '#contact') {
       setOpeningComplete(true);
       globalIntroSeen = true;
     }

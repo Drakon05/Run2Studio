@@ -68,8 +68,25 @@ export default function Navigation() {
           >
             Home
           </a>
-          <a href="/#work" className="hover:text-brand-blue transition-colors uppercase cursor-pointer" onClick={(e) => handleNav(e, "/#work")}>Work</a>
-          <a href="/about" className="hover:text-brand-blue transition-colors uppercase cursor-pointer" onClick={(e) => handleNav(e, "/about")}>About</a>
+          <a 
+            href="/#work" 
+            className="hover:text-brand-blue transition-colors uppercase cursor-pointer" 
+            onClick={(e) => {
+              if (typeof window !== "undefined") {
+                (window as any).run2_intro_bypass = true;
+              }
+              handleNav(e, "/#work");
+            }}
+          >
+            Work
+          </a>
+          <a 
+            href="/about" 
+            className="hover:text-brand-blue transition-colors uppercase cursor-pointer" 
+            onClick={(e) => handleNav(e, "/about")}
+          >
+            About
+          </a>
         </nav>
 
         <a 
