@@ -26,7 +26,10 @@ export default function Home() {
     // Check if we are bypassing the intro via a navigation click or if it was already seen in this JS context
     // We use a custom window property to catch navigation clicks from other pages
     const hasBypass = typeof window !== 'undefined' && (window as any).run2_intro_bypass === true;
-    if (globalIntroSeen || hasBypass || window.location.hash === '#hero' || window.location.hash === '#work' || window.location.hash === '#contact') {
+    
+    // Only bypass if it was already seen this session or if explicitly bypassed via a navigation click.
+    // We intentionally DO NOT check the URL hash here so that a hard refresh always plays the intro.
+    if (globalIntroSeen || hasBypass) {
       setOpeningComplete(true);
       globalIntroSeen = true;
     }

@@ -21,7 +21,7 @@ export default function Navigation() {
 
   const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    if (href === "/#hero" && typeof window !== "undefined") {
+    if (typeof window !== "undefined") {
       (window as any).run2_intro_bypass = true;
     }
     
@@ -71,12 +71,7 @@ export default function Navigation() {
           <a 
             href="/#work" 
             className="hover:text-brand-blue transition-colors uppercase cursor-pointer" 
-            onClick={(e) => {
-              if (typeof window !== "undefined") {
-                (window as any).run2_intro_bypass = true;
-              }
-              handleNav(e, "/#work");
-            }}
+            onClick={(e) => handleNav(e, "/#work")}
           >
             Work
           </a>
