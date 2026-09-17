@@ -8,7 +8,7 @@ const team = [
   {
     name: "Arjun Addanki",
     role: "CEO",
-    image: null,
+    image: "/team/arjun.jpg",
   },
   {
     name: "Manasi C Mohan",
