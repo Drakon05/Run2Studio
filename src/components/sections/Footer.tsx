@@ -4,6 +4,7 @@ import MooveO from "@/components/MooveO";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { assetPath } from "@/lib/assets";
 
 export default function Footer() {
   return (
@@ -37,7 +38,7 @@ export default function Footer() {
           
           <div className="flex flex-col gap-6">
             <Link href="/" data-cursor="VIEW →">
-              <img src="/logo.png" alt="RUN2 STUDIO" className="h-12 w-auto" />
+              <img src={assetPath("/logo.png")} alt="RUN2 STUDIO" className="h-12 w-auto" />
             </Link>
             <p className="font-secondary text-brand-gray max-w-xs font-medium">
               Turn ideas into well-resolved products. Minimise the layers between client and designer.

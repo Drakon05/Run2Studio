@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import { assetPath } from "@/lib/assets";
 
 export default function Verso() {
   return (
@@ -44,7 +45,7 @@ export default function Verso() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           <img 
-            src="/projects/verso/01_Cover_Hero.jpg" 
+            src={assetPath("/projects/verso/01_Cover_Hero.jpg")} 
             alt="Verso System" 
             className="w-full h-full object-cover"
           />
@@ -73,7 +74,7 @@ export default function Verso() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
           <div className="flex flex-col gap-6">
             <div className="aspect-[4/3] bg-brand-gray/10 overflow-hidden">
-              <img src="/projects/verso/08_Storage_Closed_Lifestyle.jpg" className="w-full h-full object-cover" alt="Storage State" />
+              <img src={assetPath("/projects/verso/08_Storage_Closed_Lifestyle.jpg")} className="w-full h-full object-cover" alt="Storage State" />
             </div>
             <div>
               <span className="font-secondary text-brand-blue font-bold text-sm">01</span>
@@ -83,7 +84,7 @@ export default function Verso() {
           </div>
           <div className="flex flex-col gap-6">
             <div className="aspect-[4/3] bg-brand-gray/10 overflow-hidden">
-              <img src="/projects/verso/09_Day_Desk_Mode.jpg" className="w-full h-full object-cover" alt="Desk State" />
+              <img src={assetPath("/projects/verso/09_Day_Desk_Mode.jpg")} className="w-full h-full object-cover" alt="Desk State" />
             </div>
             <div>
               <span className="font-secondary text-brand-blue font-bold text-sm">02</span>
@@ -93,7 +94,7 @@ export default function Verso() {
           </div>
           <div className="flex flex-col gap-6">
             <div className="aspect-[4/3] bg-brand-gray/10 overflow-hidden">
-              <img src="/projects/verso/10_Night_Bed_Mode.jpg" className="w-full h-full object-cover" alt="Bed State" />
+              <img src={assetPath("/projects/verso/10_Night_Bed_Mode.jpg")} className="w-full h-full object-cover" alt="Bed State" />
             </div>
             <div>
               <span className="font-secondary text-brand-blue font-bold text-sm">03</span>
@@ -106,11 +107,11 @@ export default function Verso() {
         <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888] mb-8">Every Face</h4>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {[
-            { title: "Front", img: "/projects/verso/03_Storage_Closed.png" },
-            { title: "Front open", img: "/projects/verso/04_Bed_Mode.png" },
-            { title: "Side", img: "/projects/verso/05_Side_View.png" },
-            { title: "Back", img: "/projects/verso/06_Back_View.png" },
-            { title: "Other side", img: "/projects/verso/07_Other_Side_View.png" }
+            { title: "Front", img: assetPath("/projects/verso/03_Storage_Closed.png") },
+            { title: "Front open", img: assetPath("/projects/verso/04_Bed_Mode.png") },
+            { title: "Side", img: assetPath("/projects/verso/05_Side_View.png") },
+            { title: "Back", img: assetPath("/projects/verso/06_Back_View.png") },
+            { title: "Other side", img: assetPath("/projects/verso/07_Other_Side_View.png") }
           ].map((item, i) => (
             <div key={i} className="flex flex-col gap-4">
               <div className="bg-white aspect-[3/4] p-4 flex items-center justify-center">
@@ -141,7 +142,7 @@ export default function Verso() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div className="flex flex-col gap-6">
               <div className="aspect-[4/3] bg-[#E0E0E0] overflow-hidden">
-                <img src="/projects/verso/11_Day_Desk_Detail.jpg" className="w-full h-full object-cover" alt="Day" />
+                <img src={assetPath("/projects/verso/11_Day_Desk_Detail.jpg")} className="w-full h-full object-cover" alt="Day" />
               </div>
               <div>
                 <h3 className="font-secondary text-xl font-bold uppercase tracking-widest mb-2"><span className="text-brand-blue mr-2">A</span> Day</h3>
@@ -150,7 +151,7 @@ export default function Verso() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="aspect-[4/3] bg-[#E0E0E0] overflow-hidden">
-                <img src="/projects/verso/12_Night_Bed_Detail.jpg" className="w-full h-full object-cover" alt="Night" />
+                <img src={assetPath("/projects/verso/12_Night_Bed_Detail.jpg")} className="w-full h-full object-cover" alt="Night" />
               </div>
               <div>
                 <h3 className="font-secondary text-xl font-bold uppercase tracking-widest mb-2"><span className="text-brand-blue mr-2">B</span> Night</h3>
@@ -176,7 +177,7 @@ export default function Verso() {
           <div className="flex flex-col gap-6">
             <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888]">Material Detail</h4>
             <div className="bg-brand-gray/10 p-2 aspect-[4/3] flex items-center justify-center overflow-hidden">
-              <img src="/projects/verso/13_Desk_Hinge_Detail.jpg" className="w-full h-full object-cover" alt="Hinge" />
+              <img src={assetPath("/projects/verso/13_Desk_Hinge_Detail.jpg")} className="w-full h-full object-cover" alt="Hinge" />
             </div>
             <p className="font-secondary text-brand-gray text-sm text-center">Black steel bracket and hinge</p>
           </div>
@@ -184,7 +185,7 @@ export default function Verso() {
           <div className="flex flex-col gap-6">
             <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888]">&nbsp;</h4>
             <div className="bg-brand-gray/10 p-2 aspect-[4/3] flex items-center justify-center overflow-hidden">
-              <img src="/projects/verso/14_Oak_Veneer_Detail.jpg" className="w-full h-full object-cover" alt="Veneer" />
+              <img src={assetPath("/projects/verso/14_Oak_Veneer_Detail.jpg")} className="w-full h-full object-cover" alt="Veneer" />
             </div>
             <p className="font-secondary text-brand-gray text-sm text-center">Oak veneer, white oiled</p>
           </div>
@@ -192,7 +193,7 @@ export default function Verso() {
           <div className="flex flex-col gap-6">
             <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888]">&nbsp;</h4>
             <div className="bg-brand-gray/10 p-2 aspect-[4/3] flex items-center justify-center overflow-hidden">
-              <img src="/projects/verso/15_Solid_Oak_Bed_Frame_Detail.jpg" className="w-full h-full object-cover" alt="Frame" />
+              <img src={assetPath("/projects/verso/15_Solid_Oak_Bed_Frame_Detail.jpg")} className="w-full h-full object-cover" alt="Frame" />
             </div>
             <p className="font-secondary text-brand-gray text-sm text-center">Solid oak bed frame</p>
           </div>
@@ -224,7 +225,7 @@ export default function Verso() {
       <section className="px-6 md:px-12 max-w-screen-2xl mx-auto mb-24">
         <div className="w-full aspect-[4/3] md:aspect-video bg-brand-gray/10 relative overflow-hidden">
           <img 
-            src="/projects/verso/16_Final_Bed_Hero.jpg" 
+            src={assetPath("/projects/verso/16_Final_Bed_Hero.jpg")} 
             alt="Verso final" 
             className="w-full h-full object-cover"
           />

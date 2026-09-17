@@ -3,27 +3,28 @@
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import { assetPath } from "@/lib/assets";
 
 const team = [
   {
     name: "Arjun Addanki",
     role: "CEO",
-    image: "/team/arjun.jpg",
+    image: assetPath("/team/arjun.jpg"),
   },
   {
     name: "Manasi C Mohan",
     role: "CDO",
-    image: "/team/manasi.jpg",
+    image: assetPath("/team/manasi.jpg"),
   },
   {
     name: "Naisha Singh",
     role: "Designer",
-    image: "/team/naisha.jpg",
+    image: assetPath("/team/naisha.jpg"),
   },
   {
     name: "Kanak Thawani",
     role: "Intern",
-    image: "/team/kanak.jpg",
+    image: assetPath("/team/kanak.jpg"),
   }
 ];
 

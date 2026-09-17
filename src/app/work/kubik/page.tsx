@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
+import { assetPath } from "@/lib/assets";
 
 export default function Kubik() {
   return (
@@ -44,7 +45,7 @@ export default function Kubik() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           <img 
-            src="/projects/kubik/01_cover_hero.png" 
+            src={assetPath("/projects/kubik/01_cover_hero.png")} 
             alt="Kubik System" 
             className="w-full h-full object-cover"
           />
@@ -72,10 +73,10 @@ export default function Kubik() {
         <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888] mb-8">Four Functions, One Component</h4>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24">
           {[
-            { title: "Storage", id: "01", img: "/projects/kubik/04_function_storage.png" },
-            { title: "Shelf", id: "02", img: "/projects/kubik/05_function_shelf.png" },
-            { title: "Side table", id: "03", img: "/projects/kubik/06_function_side_table.png" },
-            { title: "Stool", id: "04", img: "/projects/kubik/07_function_stool.png" }
+            { title: "Storage", id: "01", img: assetPath("/projects/kubik/04_function_storage.png") },
+            { title: "Shelf", id: "02", img: assetPath("/projects/kubik/05_function_shelf.png") },
+            { title: "Side table", id: "03", img: assetPath("/projects/kubik/06_function_side_table.png") },
+            { title: "Stool", id: "04", img: assetPath("/projects/kubik/07_function_stool.png") }
           ].map((item, i) => (
             <div key={i} className="flex flex-col gap-6">
               <div className="aspect-[3/4] bg-white overflow-hidden p-8 flex items-center justify-center">
@@ -93,7 +94,7 @@ export default function Kubik() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-4 flex flex-col gap-6">
             <div className="aspect-[3/4] bg-white overflow-hidden p-8 flex items-center justify-center">
-              <img src="/projects/kubik/08_grouped_vertical_storage.png" className="w-full h-full object-contain mix-blend-multiply" alt="Vertical storage" />
+              <img src={assetPath("/projects/kubik/08_grouped_vertical_storage.png")} className="w-full h-full object-contain mix-blend-multiply" alt="Vertical storage" />
             </div>
             <div>
               <h3 className="font-secondary text-xl font-bold uppercase tracking-widest mb-1">Vertical storage</h3>
@@ -102,7 +103,7 @@ export default function Kubik() {
           </div>
           <div className="md:col-span-4 flex flex-col gap-6">
             <div className="aspect-[3/4] bg-white overflow-hidden p-8 flex items-center justify-center">
-              <img src="/projects/kubik/09_grouped_table_with_stools.png" className="w-full h-full object-contain mix-blend-multiply" alt="Table with stools" />
+              <img src={assetPath("/projects/kubik/09_grouped_table_with_stools.png")} className="w-full h-full object-contain mix-blend-multiply" alt="Table with stools" />
             </div>
             <div>
               <h3 className="font-secondary text-xl font-bold uppercase tracking-widest mb-1">Table with stools</h3>
@@ -111,7 +112,7 @@ export default function Kubik() {
           </div>
           <div className="md:col-span-4 flex flex-col gap-6">
             <div className="aspect-[3/4] bg-white overflow-hidden p-8 flex items-center justify-center">
-              <img src="/projects/kubik/10_single_module_detail.png" className="w-full h-full object-contain mix-blend-multiply" alt="Single module" />
+              <img src={assetPath("/projects/kubik/10_single_module_detail.png")} className="w-full h-full object-contain mix-blend-multiply" alt="Single module" />
             </div>
             <div>
               <h3 className="font-secondary text-xl font-bold uppercase tracking-widest mb-1">Single module</h3>
@@ -140,7 +141,7 @@ export default function Kubik() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div className="flex flex-col gap-6">
               <div className="aspect-video bg-[#E0E0E0] overflow-hidden">
-                <img src="/projects/kubik/11_adaptability_stacked.png" className="w-full h-full object-cover" alt="Stacked" />
+                <img src={assetPath("/projects/kubik/11_adaptability_stacked.png")} className="w-full h-full object-cover" alt="Stacked" />
               </div>
               <div>
                 <h3 className="font-secondary text-xl font-bold uppercase tracking-widest mb-2"><span className="text-brand-blue mr-2">A</span> Stacked</h3>
@@ -149,7 +150,7 @@ export default function Kubik() {
             </div>
             <div className="flex flex-col gap-6">
               <div className="aspect-video bg-[#E0E0E0] overflow-hidden">
-                <img src="/projects/kubik/12_adaptability_dispersed.png" className="w-full h-full object-cover" alt="Dispersed" />
+                <img src={assetPath("/projects/kubik/12_adaptability_dispersed.png")} className="w-full h-full object-cover" alt="Dispersed" />
               </div>
               <div>
                 <h3 className="font-secondary text-xl font-bold uppercase tracking-widest mb-2"><span className="text-brand-blue mr-2">B</span> Dispersed</h3>
@@ -178,7 +179,7 @@ export default function Kubik() {
           <div className="flex flex-col gap-6">
             <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888]">Material Detail</h4>
             <div className="bg-white p-8 aspect-video flex items-center justify-center">
-              <img src="/projects/kubik/14_material_reclaimed_wood_veneer.png" className="w-full h-full object-contain" alt="Wood Veneer" />
+              <img src={assetPath("/projects/kubik/14_material_reclaimed_wood_veneer.png")} className="w-full h-full object-contain" alt="Wood Veneer" />
             </div>
             <p className="font-secondary text-brand-gray text-sm text-center">Reclaimed wood veneer</p>
           </div>
@@ -186,7 +187,7 @@ export default function Kubik() {
           <div className="flex flex-col gap-6">
             <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888]">Magnetic Connection</h4>
             <div className="bg-white p-8 aspect-video flex items-center justify-center">
-              <img src="/projects/kubik/13_construction_magnetic_connection.png" className="w-full h-full object-contain" alt="Magnetic connection" />
+              <img src={assetPath("/projects/kubik/13_construction_magnetic_connection.png")} className="w-full h-full object-contain" alt="Magnetic connection" />
             </div>
             <p className="font-secondary text-brand-gray text-sm text-center">N42 discs, alternating polarity</p>
           </div>
@@ -194,7 +195,7 @@ export default function Kubik() {
           <div className="flex flex-col gap-6">
             <h4 className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888]">Edge Detail</h4>
             <div className="bg-white p-8 aspect-video flex items-center justify-center">
-              <img src="/projects/kubik/15_construction_edge_detail.png" className="w-full h-full object-contain" alt="Edge detail" />
+              <img src={assetPath("/projects/kubik/15_construction_edge_detail.png")} className="w-full h-full object-contain" alt="Edge detail" />
             </div>
             <p className="font-secondary text-brand-gray text-sm text-center">Concealed connector</p>
           </div>
@@ -222,7 +223,7 @@ export default function Kubik() {
       <section className="px-6 md:px-12 max-w-screen-2xl mx-auto mb-24">
         <div className="w-full aspect-[4/3] md:aspect-video bg-brand-gray/10 relative overflow-hidden">
           <img 
-            src="/projects/kubik/16_final_hero.png" 
+            src={assetPath("/projects/kubik/16_final_hero.png")} 
             alt="Kubik final" 
             className="w-full h-full object-cover"
           />

@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: isProd ? "/Run2Studio" : "",
   assetPrefix: isProd ? "/Run2Studio/" : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/Run2Studio" : "",
+  },
   images: {
     unoptimized: true,
   },

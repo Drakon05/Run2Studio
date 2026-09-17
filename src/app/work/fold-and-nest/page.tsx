@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/sections/Footer";
 import MooveO from "@/components/MooveO";
+import { assetPath } from "@/lib/assets";
 
 export default function FoldAndNest() {
   return (
@@ -45,7 +46,7 @@ export default function FoldAndNest() {
           transition={{ duration: 1, delay: 0.2 }}
         >
           <img 
-            src="/projects/fold-and-nest/16.png" 
+            src={assetPath("/projects/fold-and-nest/16.png")} 
             alt="Fold and Nest System" 
             className="w-full h-full object-cover"
           />
@@ -73,7 +74,7 @@ export default function FoldAndNest() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-24">
           <div className="flex flex-col gap-6">
             <div className="aspect-[3/4] bg-brand-gray/10 overflow-hidden">
-              <img src="/projects/fold-and-nest/5.png" className="w-full h-full object-cover" alt="Storage State" />
+              <img src={assetPath("/projects/fold-and-nest/5.png")} className="w-full h-full object-cover" alt="Storage State" />
             </div>
             <div>
               <span className="font-secondary text-brand-blue font-bold text-sm">01</span>
@@ -83,7 +84,7 @@ export default function FoldAndNest() {
           </div>
           <div className="flex flex-col gap-6">
             <div className="aspect-[3/4] bg-brand-gray/10 overflow-hidden">
-              <img src="/projects/fold-and-nest/0.png" className="w-full h-full object-cover" alt="Sofa State" />
+              <img src={assetPath("/projects/fold-and-nest/0.png")} className="w-full h-full object-cover" alt="Sofa State" />
             </div>
             <div>
               <span className="font-secondary text-brand-blue font-bold text-sm">02</span>
@@ -93,7 +94,7 @@ export default function FoldAndNest() {
           </div>
           <div className="flex flex-col gap-6">
             <div className="aspect-[3/4] bg-brand-gray/10 overflow-hidden">
-              <img src="/projects/fold-and-nest/3.png" className="w-full h-full object-cover" alt="Bed State" />
+              <img src={assetPath("/projects/fold-and-nest/3.png")} className="w-full h-full object-cover" alt="Bed State" />
             </div>
             <div>
               <span className="font-secondary text-brand-blue font-bold text-sm">03</span>
@@ -123,25 +124,25 @@ export default function FoldAndNest() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="flex flex-col gap-4">
               <div className="bg-brand-gray/10 aspect-[3/4]">
-                <img src="/projects/fold-and-nest/8.png" className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Front" />
+                <img src={assetPath("/projects/fold-and-nest/8.png")} className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Front" />
               </div>
               <span className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888] text-center">Front</span>
             </div>
             <div className="flex flex-col gap-4">
               <div className="bg-brand-gray/10 aspect-[3/4]">
-                <img src="/projects/fold-and-nest/6.png" className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Open" />
+                <img src={assetPath("/projects/fold-and-nest/6.png")} className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Open" />
               </div>
               <span className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888] text-center">Open</span>
             </div>
             <div className="flex flex-col gap-4">
               <div className="bg-brand-gray/10 aspect-[3/4]">
-                <img src="/projects/fold-and-nest/9.png" className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Side" />
+                <img src={assetPath("/projects/fold-and-nest/9.png")} className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Side" />
               </div>
               <span className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888] text-center">Side</span>
             </div>
             <div className="flex flex-col gap-4">
               <div className="bg-brand-gray/10 aspect-[3/4]">
-                <img src="/projects/fold-and-nest/10.png" className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Back" />
+                <img src={assetPath("/projects/fold-and-nest/10.png")} className="w-full h-full object-contain p-4 mix-blend-multiply" alt="Back" />
               </div>
               <span className="font-secondary text-sm font-bold tracking-widest uppercase text-[#888] text-center">Back</span>
             </div>
@@ -162,10 +163,10 @@ export default function FoldAndNest() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
           {[
-            { title: "Upholstered Front", desc: "The deck underside is covered, so the stored state reads as a finished cabinet.", img: "/projects/fold-and-nest/13.png" },
-            { title: "Peg and Cleat", desc: "Timber cleats locate the deck; legs drop onto pegs. No screws at the moving joints.", img: "/projects/fold-and-nest/14.png" },
-            { title: "Open Bay", desc: "Shelves behind the deck stay reachable in every configuration.", img: "/projects/fold-and-nest/15.png" },
-            { title: "Transformation", desc: "One pivot line, two hinged leaves, four drop-on legs. Nothing is added or removed between states.", img: "/projects/fold-and-nest/4.png" }
+            { title: "Upholstered Front", desc: "The deck underside is covered, so the stored state reads as a finished cabinet.", img: assetPath("/projects/fold-and-nest/13.png") },
+            { title: "Peg and Cleat", desc: "Timber cleats locate the deck; legs drop onto pegs. No screws at the moving joints.", img: assetPath("/projects/fold-and-nest/14.png") },
+            { title: "Open Bay", desc: "Shelves behind the deck stay reachable in every configuration.", img: assetPath("/projects/fold-and-nest/15.png") },
+            { title: "Transformation", desc: "One pivot line, two hinged leaves, four drop-on legs. Nothing is added or removed between states.", img: assetPath("/projects/fold-and-nest/4.png") }
           ].map((item, i) => (
             <div key={i} className="flex flex-col gap-6">
               <div className="aspect-[3/4] bg-brand-gray/10">

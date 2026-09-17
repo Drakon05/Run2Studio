@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { assetPath } from "@/lib/assets";
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -57,7 +58,7 @@ export default function Navigation() {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       >
         <Link href="/" data-cursor="VIEW →" onClick={(e) => handleNav(e, "/")}>
-          <img src="/logo.png" alt="RUN2 STUDIO" className="h-10 w-auto rounded-md" />
+          <img src={assetPath("/logo.png")} alt="RUN2 STUDIO" className="h-10 w-auto rounded-md" />
         </Link>
         <nav className="hidden md:flex items-center gap-8 font-secondary text-sm font-medium tracking-wide">
           <a 

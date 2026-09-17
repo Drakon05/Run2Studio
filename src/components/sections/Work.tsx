@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
+import { assetPath } from "@/lib/assets";
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
     slug: "fold-and-nest",
     discipline: "Furniture & Compact Living",
     desc: "A modular sofa, bed, and storage system designed to adapt within a single footprint.",
-    image: "/projects/fold-and-nest/16.png",
+    image: assetPath("/projects/fold-and-nest/16.png"),
     layout: "col-span-12 md:col-span-8",
   },
   {
@@ -20,7 +21,7 @@ const projects = [
     slug: "kubik",
     discipline: "Modular Systems",
     desc: "A stackable modular storage system designed to move, adapt and reconfigure with you.",
-    image: "/projects/kubik/01_cover_hero.png",
+    image: assetPath("/projects/kubik/01_cover_hero.png"),
     layout: "col-span-12 md:col-span-6 md:col-start-7 mt-12 md:mt-32",
   },
   {
@@ -29,7 +30,7 @@ const projects = [
     slug: "verso",
     discipline: "Space Saving Systems",
     desc: "Wall bed, desk and storage in one cabinet.",
-    image: "/projects/verso/01_Cover_Hero.jpg",
+    image: assetPath("/projects/verso/01_Cover_Hero.jpg"),
     layout: "col-span-12 md:col-span-8 mt-12 md:mt-32",
   },
 ];
