@@ -7,6 +7,7 @@ import Opening from "@/components/sections/Opening";
 import Hero from "@/components/sections/Hero";
 import Positioning from "@/components/sections/Positioning";
 import Process from "@/components/sections/Process";
+import WorkflowComparison from "@/components/sections/WorkflowComparison";
 import Work from "@/components/sections/Work";
 import Services from "@/components/sections/Services";
 import ProjectEntry from "@/components/sections/ProjectEntry";
@@ -54,6 +55,7 @@ export default function Home() {
             <Hero />
             <Positioning />
             <Process />
+            <WorkflowComparison />
             <Work />
             <Services />
             <ProjectEntry />

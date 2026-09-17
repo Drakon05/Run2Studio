@@ -48,7 +48,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4 font-secondary">
               <h4 className="uppercase tracking-widest text-xs font-bold text-brand-gray">Contact</h4>
               <a href="mailto:hello@run2.studio" className="hover:text-brand-blue transition-colors font-medium">hello@run2.studio</a>
-              <span className="text-brand-gray font-medium">Melbourne, AU</span>
+              <span className="text-brand-gray font-medium">Ahmedabad, GJ</span>
             </div>
             
             <div className="flex flex-col gap-4 font-secondary">
